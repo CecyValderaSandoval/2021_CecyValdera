@@ -1,0 +1,23 @@
+
+header{
+    background-color: brown;
+    height: 150px;
+}
+nav{
+    background-color: cadetblue;
+    height: 25%;
+}
+
+section{
+    background-color: chocolate;
+    height: 50%;
+}
+aside{
+    background-color: darkblue;
+    height: 25%;
+}
+
+footer{
+    background-color: darkgreen;
+    height: 100px;
+}
