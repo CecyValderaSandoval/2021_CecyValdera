@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematografica</title>
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <div id="contenedor">
+        <h2 style= "color: aquamarine;"> Encuesta de cine: Nominadas al Oscar 2021</h2>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            
+            <fieldset id="datos_personales">
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre"><br>
+        
+            <label for="dni">DNI</label><br>
+            <input type="text" name="dni" id="dni" maxlength="9"><br>
+
+            <label for="edad">edad</label><br>
+            <input type="text" name="edad" id="edad" maxlength="2"><br>
+
+            <label for="edad">Sexo</label><br>
+            <select >
+                <option >Masculino</option>
+                <option>Femenino</option>
+            </select>
+    <br>
+    <fieldset id="mejor_pelicula">
+        <legend>Mejor Pelicula</legend>
+        <input type="radio" name="pelicula" value="11"> Jeepers creepers<br>
+        <input type="radio" name="pelicula" value="22"> Extraction<br>
+        <input type="radio" name="pelicula" value="33"> El Castillo de Casgliostro<br>
+    </fieldset>
+    <br>
+    <fieldset id="Seleccione las peliculas que no hayas visto">
+        <legend>Seleccione las peliculas que no hayas visto</legend>
+        <input type="radio" name="pelicula" value="44"> El juicio de los 7 de Chicago<br>
+        <input type="radio" name="pelicula" value="55"> Los chicos del barrio<br>
+        <input type="radio" name="pelicula" value="66"> Yo, Daniel Blake<br>
+        <input type="radio" name="pelicula" value="77"> Dunkerque<br>
+    </fieldset>
+
+<br>
+    <fieldset id="grupo_argumento">
+        <legend>Argumento de tu pelicula preferida</legend>
+        <textarea id="argumento" name="argumento" rows="14" cols="50"></textarea>
+    </fieldset>
+    <br>
+    <input type="reset" value="borrar formulario"><input type="submit" value="enviar">
+</form>
+</div>
+</body>
+</html>

@@ -5,14 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
-    <link rel="stylesheet" href="css/estilo.css">    
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="img/foto.ico">
 </head>
 
 <body>
     <main>
-        
-        <h1>EN CONSTRUCCION</h1>
+        <header>
+            <div>
+                <img class="foto" src="img/foto.jpg" alt="foto">
+            </div>
+            <div>
+                <h1 id="nombres">Cecy Valdera Sandoval</h1>
+                <h2 id="web_personal">Mi web Personal</h2>
+            </div>
+            <p>
+                <a href="sesion.html"><b>Iniciar Sesión</b></a>
+            </p>
+        </header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a class="paginaSeleccionada" href="contactos.html">Contactos</a>
+            <p></p>
+        </nav>
+        <aside>
+            <ul class="enlaces-aside">
+                <h3 class="texto-aside">Menú</h3>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+            <ul class="enlaces-aside">
+                <h3 class="texto-aside">Enlaces de interés</h3>
+                <li><a href="#">Enlace de interes 1</a></li>
+                <li><a href="#">Enlace de interes 2</a></li>
+                <li><a href="#">Enlace de interes 3</a></li>
+                <li><a href="#">Enlace de interes 4</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h2>Para comunicarse conmigo</h2>
+            <div id="contacto">
+                <form id="frmContacto" name="frmContacto" method="post" action="data.php">
+                    <div class="areaTexto">
+                        <label class="label_contenedor" for="nombre"><b>Nombre</b></label><br>
+                        <input class="txtContacto" type="text" name="nombre" id="nombre"><br>
+    
+                        <label class="label_contenedor" for="apellido"><b>Apellido</b></label><br>
+                        <input class="txtContacto" type="text" name="apellido" id="apellido"><br>
+    
+                        <label class="label_contenedor" for="email"><b>Email</b></label><br>
+                        <input class="txtContacto" type="text" name="email" id="email"><br>
+    
+                        <label class="label_contenedor" for="msj"><b>Mensaje</b></label><br>
+                        <textarea class="txtContacto" name="msj" id="msj" cols="80" rows="10"></textarea>
+                    </div>
+                    
+                    <div class="botones">
+                        <input class="btnContacto" type="reset" value="Limpiar"><input class="btnContacto" type="submit" value="Enviar">
+                    </div>
+                    
+                </form>
+
+                <ul id="contacto_lista">
+                    <h3>Información de contacto</h3>
+                    <li>Celular Claro: 565-857-664</li>
+                    <li>Celular Movistar: 999-999-999</li>
+                    <li>Direccion: Direccion 1 </li>
+                    <li>Correo electronico: correousat@gmail.com</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <footer id="footer">
+            <img src="img/foto.jpg" alt="foto">
+            <ul>
+                <h3>Información de contacto</h3>
+                <li>Celular Claro: 565-857-664</li>
+                <li>Celular Movistar: 999-999-999</li>
+                <li>Direccion: Direccion 1 </li>
+                <li>Correo electronico: correousat@gmail.com</li>
+            </ul>
+            <ul>
+                <h3>Siguenos en</h3>
+                <li><a href="index.html">Intagram</a></li>
+                <li><a href="index.html">Facebook</a></li>
+                <li><a href="index.html">Twitter</a></li>
+                <li><a href="index.html">GitHub</a></li>
+            </ul>
+
+            <ul>
+                <h3>Enlaces de interés</h3>
+                <li><a href="#">Enlace de interes 1</a></li>
+                <li><a href="#">Enlace de interes 2</a></li>
+                <li><a href="#">Enlace de interes 3</a></li>
+                <li><a href="#">Enlace de interes 4</a></li>
+            </ul>
+            <ul>
+                <h3>Menú</h3>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </footer>
+        <footer id="final">
+            WebMaster: Cecy Valdera Sandoval
+        </footer>
     </main>
 </body>
 
